@@ -2,12 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Hermetik</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+      <div class="intro">
+        <h2>Hermetik</h2>
+        <h4>Bienvenid@s a Hermetik somos una App. que permite enviar mensajes importantes de una forma segura.</h4>
+        <!--<p>Un poco de historia sobre Hermetik.... esta App. se creo el 2018 para enviar información valiosa de forma segura. 
+          Nuestro nombre se debe a las capsulas espaciales que deben ser hermeticas para mantener seguros a los astronautas, hoy en día lo que debemos mantener seguro es nuestra información</p>-->
+    </div> <!--fin de introduccion al usuario-->
+      
+    <div class="caja">
+        <h5>Elije tu nivel de seguridad</h5>
+        <select name="selec">
+          <option value="value1"selected>Nivel bajo</option> 
+          <option value="value2">Nivel medio</option>
+          <option value="value3">Nivel alto</option>
+        </select> <br>
+        <input type="text" placeholder="ingresa mensaje" ><br>
+        <button type="button" class="btn btn-outline-primary">Encriptar</button>
+        <button type="button" class="btn btn-outline-success">Descencriptar</button>
+      </div><!--fin de caja-->
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
