@@ -6,26 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    
       <div class="intro">
-        <h2>Hermetik</h2>
+        <h2>Hermetik</h2> 
+        
         <h4>Bienvenid@s a Hermetik somos una App. que permite enviar mensajes importantes de una forma segura.</h4>
         <!--<p>Un poco de historia sobre Hermetik.... esta App. se creo el 2018 para enviar información valiosa de forma segura. 
           Nuestro nombre se debe a las capsulas espaciales que deben ser hermeticas para mantener seguros a los astronautas, hoy en día lo que debemos mantener seguro es nuestra información</p>-->
     </div> <!--fin de introduccion al usuario-->
       
-    <div class="caja">
+    <div class="cuadro">
         <h5>Elije tu nivel de seguridad</h5>
-        <select name="selec">
-          <option value="value1"selected>Nivel bajo</option> 
-          <option value="value2">Nivel medio</option>
-          <option value="value3">Nivel alto</option>
-        </select> <br>
-        <input type="text" placeholder="ingresa mensaje" ><br>
-        <button type="button" class="btn btn-outline-primary">Encriptar</button>
-        <button type="button" class="btn btn-outline-success">Descencriptar</button>
+        <input type="text" name="numero"  placeholder="Nivel de seguridad" id="seguridad"  autocomplete="off"><br>
+        <input type="text" placeholder="Ingresa mensaje" id="rescate" autocomplete="off"><br>
+        <button type="submit" id="Encriptar">Encriptar</button>
+        <button type="submit" id="Descencriptar">Descencriptar</button>
+        <button type="button" class="button" id="limpiar">Limpiar</button><br>
+        <textarea type ="text" name="nuevoTexto" id="nuevoTexto" placeholder="aquí aparecerá el texto transformado" autocomplete="off" cols="30" rows="10"></textarea>
       </div><!--fin de caja-->
-
+      <div id="root"> <!--  OLVIDALOOOO-->
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
