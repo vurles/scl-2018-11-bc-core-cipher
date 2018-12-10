@@ -15,3 +15,9 @@ document.getElementById('Descencriptar').addEventListener('click', (event) => {
 
 
 })
+
+document.getElementById('limpiar').addEventListener('click', (event) => {
+
+    location.reload();
+
+})

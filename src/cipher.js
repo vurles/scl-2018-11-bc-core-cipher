@@ -4,7 +4,6 @@ let resultado="";
 for (let i = 0; i<texto.length;i++) {
   texto = texto.toUpperCase();
  const capsula= texto.charCodeAt(i);
-
  
  if(capsula >=65 && capsula<= 90){
   let form = (capsula - 65 + parseInt(desplazo)%26)+65;
@@ -19,8 +18,6 @@ if(capsula < 97 && capsula> 90){//este if donde dejo los caracteres especiales c
 if(capsula == 32) {
   resultado += texto[i];
 }
-
-
 }return resultado;
 
   },
