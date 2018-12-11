@@ -3,6 +3,10 @@ window.cipher = {
 let resultado="";
 for (let i = 0; i<texto.length;i++) {
   texto = texto.toUpperCase();
+
+if (texto === ñ){
+  resultado += texto[i]
+}
  const capsula= texto.charCodeAt(i);
  
  if(capsula >=65 && capsula<= 90){

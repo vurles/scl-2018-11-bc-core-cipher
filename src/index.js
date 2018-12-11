@@ -12,8 +12,6 @@ document.getElementById('Descencriptar').addEventListener('click', (event) => {
     let desplazoDeco = document.getElementById('seguridad').value;
     document.getElementById('nuevoTexto').innerHTML=window.cipher.decode(cajaDeco, desplazoDeco);
 
-
-
 })
 
 document.getElementById('limpiar').addEventListener('click', (event) => {
